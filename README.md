@@ -1,10 +1,6 @@
-# Nahhas LMS Website
+# Podcastr
 
-This is a Learning Management System (LMS) website built with Next.js. The purpose of this project is to provide a comprehensive platform for online education, tailored for the Syrian community.
-
-## Demo Video
-
-Check out the demo video for this project on YouTube: [Demo Video](https://youtu.be/0g7wvi6tehQ)
+This is a Saas Podcast creation and collabaration app powered by AI. 
 
 ---
 
@@ -35,14 +31,12 @@ Check out the demo video for this project on YouTube: [Demo Video](https://youtu
 
 ## Tech Stack
 - Framework: Next.js 14
-- Database: Prisma
 - Authentication: Clerk
-- UI Components: Radix UI, Shadcn/ui
+- UI Components: Shadcn/ui
 - Forms: React Hook Form
 - API Requests: Axios
 - Styling: Tailwind CSS
-- File Uploads: Uploadthing, Cloudinary
-- Markdown Support: React Markdown Preview, React MD Editor
+- Backend Service: Convex
 
 ## Installation
 
@@ -56,12 +50,12 @@ Make sure you have the following installed:
 To clone the project, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/AbdulrahmanNahhas/nahhas-lms.git
+git clone https://github.com/oluwaseunladeinde/podcastr.git
 ```
 
 ### Navigate to the Project Directory
 ```bash
-cd nahhas-lms
+cd podcastr
 ```
 
 ### Install Dependencies
@@ -131,3 +125,8 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Credit
+
+Credit goes to Adrian - JSMastery
