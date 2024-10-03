@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nahhas LMS Website
 
-## Getting Started
+This is a Learning Management System (LMS) website built with Next.js. The purpose of this project is to provide a comprehensive platform for online education, tailored for the Syrian community.
 
-First, run the development server:
+## Demo Video
+
+Check out the demo video for this project on YouTube: [Demo Video](https://youtu.be/0g7wvi6tehQ)
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- Browse & Filter Courses
+- Purchase Courses using Stripe
+- NoSQL database using Mongodb
+- Authentication using Clerk
+- ORM using Prisma
+- Mark Chapters as Completed or Uncompleted
+- Progress Calculation of each Course
+- Student Dashboard
+- Teacher mode
+- Create new Courses
+- Create new Chapters
+- Easily reorder chapter position with drag n’ drop
+- Upload thumbnails, attachments and videos using UploadThing
+- Video player using react-player
+- Rich text editor for chapter description
+
+## Tech Stack
+- Framework: Next.js 14
+- Database: Prisma
+- Authentication: Clerk
+- UI Components: Radix UI, Shadcn/ui
+- Forms: React Hook Form
+- API Requests: Axios
+- Styling: Tailwind CSS
+- File Uploads: Uploadthing, Cloudinary
+- Markdown Support: React Markdown Preview, React MD Editor
+
+## Installation
+
+### Prerequisites
+Make sure you have the following installed:
+- Node.js
+- npm or yarn
+- Git
+
+### Clone the Repository
+To clone the project, run the following command in your terminal:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/AbdulrahmanNahhas/nahhas-lms.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Navigate to the Project Directory
+```bash
+cd nahhas-lms
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Install Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Using npm:
+```bash
+npm install
+```
+Or using yarn:
+```bash
+yarn install
+```
 
-## Learn More
+### Set Up Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a .env.local file in the root directory and add your environment variables. Here is an example:
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+NEXT_REDIRECT=/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+DATABASE_URL=
 
-## Deploy on Vercel
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+NEXT_PUBLIC_CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_TEACHER_ID=
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
+You can also find an example environment file in .env.example.
+
+### Start the Development Server
+
+Using npm:
+```bash
+npm run dev
+```
+Or using yarn:
+```bash
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Usage
+
+To use the LMS website, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. From here, you can access all the features of the platform.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. 
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
