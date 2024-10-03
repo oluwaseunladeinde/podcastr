@@ -111,7 +111,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Usage
 
-To use the LMS website, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. From here, you can access all the features of the platform.
+To use the Podcastr, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. From here, you can access all the features of the platform.
 
 ## Contributing
 
@@ -129,4 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credit
 
-Credit goes to Adrian - JSMastery
+Credit goes to Adrian - [JSMastery](https://www.jsmastery.pro/)

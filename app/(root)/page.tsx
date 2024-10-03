@@ -6,7 +6,19 @@ const Home = () => {
     <div className='mt-9 flex flex-col gap-9'>
       <section className='flex flex-col gap-5'>
         <h1 className='text-20 font-bold text-white-1'>Trending Podcast</h1>
-        {PODCAST_DATA.map((podcast) => (<PodcastCard key={podcast.id} />))}
+        <div className="podcast_grid">
+          {PODCAST_DATA.map(({ id, description, imgURL, title }) =>
+          (
+            <PodcastCard
+              key={id}
+              imgURL={imgURL}
+              title={title}
+              description={description}
+              podcastId={id}
+            />
+          )
+          )}
+        </div>
       </section>
     </div>
   )
