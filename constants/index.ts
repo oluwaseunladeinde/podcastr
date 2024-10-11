@@ -17,7 +17,7 @@ export const LEFT_SIDEBAR_ROUTES = [
 ];
 
 
-export const VOICE_DETAILS = [
+export const VOICE_CATEGORIES = [
     {
         id: 1,
         name: "alloy",

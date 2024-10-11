@@ -1,5 +1,5 @@
 import { PodcastCard } from "@/components/podcast-card"
-import { PODCAST_DATA } from "@/constants"
+import { PODCAST_DATA } from "@/constants";
 
 const Home = () => {
   return (
